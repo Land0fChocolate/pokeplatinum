@@ -12,6 +12,7 @@
 #include "underground/defs.h"
 
 #include "bag.h"
+#include "ball_seal_info.h"
 #include "battle_regulation.h"
 #include "field_script_context.h"
 #include "heap.h"
@@ -33,7 +34,6 @@
 #include "underground.h"
 #include "unk_02017038.h"
 #include "unk_020298BC.h"
-#include "unk_0202C9F4.h"
 #include "unk_02054884.h"
 #include "unk_02092494.h"
 #include "vars_flags.h"
