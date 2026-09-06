@@ -1,4 +1,4 @@
-#include "unk_0202D778.h"
+#include "ribbon_save.h"
 
 #include <nitro.h>
 #include <string.h>
@@ -7,12 +7,12 @@
 
 int Ribbons_SaveSize(void)
 {
-    return 14;
+    return sizeof(SpecialRibbonsSave);
 }
 
-void Ribbons_Init(u8 *param0)
+void Ribbons_Init(u8 *ribbons)
 {
-    memset(param0, 0, 14);
+    memset(ribbons, 0, sizeof(SpecialRibbonsSave));
 }
 
 u8 *SaveData_GetRibbons(SaveData *saveData)

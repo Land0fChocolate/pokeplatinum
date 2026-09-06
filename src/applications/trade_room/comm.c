@@ -12,7 +12,7 @@
 #include "communication_system.h"
 #include "pal_pad.h"
 #include "party.h"
-#include "unk_0202D778.h"
+#include "ribbon_save.h"
 #include "unk_02032798.h"
 
 void TradeRoom_ReceivePalPad(int senderNetId, int unused, void *data, void *fieldSystem);
@@ -183,7 +183,7 @@ static int TradeRoom_ChatotCryPacketSize(void)
 
 static int TradeRoom_RibbonPacketSize(void)
 {
-    return 14;
+    return sizeof(SpecialRibbonsSave);
 }
 
 static int TradeRoom_PalPadPacketSize(void)
